@@ -36,7 +36,9 @@ public class Cliente {
     }
 
     
-    public String exibitResumo(){
+    public String exibirResumo(){
+        String informacoes = "Nome: " + this.nome + "Email: " + this.email + "Endereço: " + this.endereco;
+        return informacoes;
     }
 
 
