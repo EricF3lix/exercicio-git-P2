@@ -17,12 +17,30 @@ public class Pedido {
     }
 
     public double calcularTotal() {
+        double total = 0;
+        for (ItemPedido item: itens){
+            total += item.calcularSubtotal();
+            
+        }
+        return total;
+        
 
     }
 
-    public void gerarRecibo(){
-
+    public void gerarRecibo() {
+    if (itens == null || itens.size() == 0) {
+        System.out.println("Não há itens");
+    } else {
+        System.out.println(cliente.exibirResumo());
+        
+        for (ItemPedido item : itens) {
+            System.out.println(
+                "Item: " + item.getProduto().getNome() + " Preço total: " + item.calcularSubtotal());
+        }
+        
+        System.out.println("Total: " + calcularTotal());
     }
+}
 
     public int getNumero() {
         return numero;
