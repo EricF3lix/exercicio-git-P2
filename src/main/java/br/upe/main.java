@@ -1,12 +1,10 @@
 package br.upe;
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        Scanner input = new Scanner(System.in);
-        ArrayList<ItemPedido> itens = new ArrayList<ItemPedido>();
+        ArrayList<ItemPedido> itens = new ArrayList<>();
 
         Endereco endereco = new Endereco ("Rua Vicente de Lá", "201", "12563-587");
         Cliente cliente = new Cliente("Fulano de tal", "fulaninho01@gmail.com", endereco);
