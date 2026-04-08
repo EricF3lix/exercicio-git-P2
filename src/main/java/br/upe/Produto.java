@@ -12,6 +12,10 @@ public class Produto{
     }
 	
 	public double getPreco() {
-		return preco;
+		return this.preco;
 	}
+	public String getNome(){
+		return this.nome;
+	}
+	
 }

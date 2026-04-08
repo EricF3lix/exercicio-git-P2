@@ -31,6 +31,7 @@ public class Pedido {
     if (itens == null || itens.size() == 0) {
         System.out.println("Não há itens");
     } else {
+        System.out.println("======Fechando o pedido======");
         System.out.println(cliente.exibirResumo());
         
         for (ItemPedido item : itens) {
@@ -42,29 +43,7 @@ public class Pedido {
     }
 }
 
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    public ArrayList<ItemPedido> getItens() {
-        return itens;
-    }
-
-    public void setItens(ArrayList<ItemPedido> itens) {
-        this.itens = itens;
-    }
+    
 
     
 }
